@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../../hooks/useMediaQuery";
+import MenuIcon from "../../assets/menu-icon.svg"
+import CloseIcon from "../../assets/close-icon.svg"
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
     <AnchorLink
-      className={`${
-        selectedPage === lowerCasePage ? "text-yellow" : ""
-      } hover:text-yellow transition duration-500`}
+      className={`${selectedPage === lowerCasePage ? "text-yellow" : " "} hover:text-yellow transition duration-500`}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
@@ -23,9 +23,10 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const navbarBackground = isTopOfPage ? "" : "bg-red";
 
   return (
-    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
+    // <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
+    <nav className={`z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bold">JE</h4>
+        <h4 className="font-playfair text-3xl font-bold">NM</h4>
 
         {/* DESKTOP NAV */}
         {isDesktop ? (
@@ -61,7 +62,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             className="rounded-full bg-red p-2"
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           >
-            <img alt="menu-icon" src="../assets/menu-icon.svg" />
+            <img alt="menu-icon" src={MenuIcon} />
           </button>
         )}
 
@@ -71,7 +72,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                <img alt="close-icon" src="../assets/close-icon.svg" />
+                <img alt="close-icon" src={CloseIcon} />
               </button>
             </div>
 
