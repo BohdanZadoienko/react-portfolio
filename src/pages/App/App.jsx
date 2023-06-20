@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import Navbar from "../../components/Navbar";
 import DotGroup from "../../components/DotGroup";
-import Landing from "../../pages/Landing"
+import LineGradient from "../../components/LineGradient";
+import Landing from "../../pages/Landing";
+import MySkills from "../../pages/MySkills";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -34,6 +36,11 @@ function App() {
         )}
         <Landing setSelectedPage={setSelectedPage} />
       </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <MySkills />
+      </div>
+      <LineGradient />
     </div>
   );
 }
