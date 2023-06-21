@@ -5,7 +5,8 @@ import DotGroup from "../../components/DotGroup";
 import LineGradient from "../../components/LineGradient";
 import Landing from "../../pages/Landing";
 import MySkills from "../../pages/MySkills";
-import Projects from "../../pages/Projects"
+import Projects from "../../pages/Projects";
+import Testimonials from "../../pages/Testimonials";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -44,6 +45,9 @@ function App() {
       <LineGradient />
       <div className="w-5/6 mx-auto">
         <Projects />
+      </div>
+      <div className="w-5/6 mx-auto">
+        <Testimonials />
       </div>
     </div>
   );

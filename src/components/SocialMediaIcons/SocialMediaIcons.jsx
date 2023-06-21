@@ -13,7 +13,7 @@ const SocialMediaIcons = () => {
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.twitter.com"
+        href="https://twitter.com/nellymakedonska"
         target="_blank"
         rel="noreferrer"
       >
@@ -21,7 +21,7 @@ const SocialMediaIcons = () => {
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.facebook.com"
+        href="https://www.facebook.com/profile.php?id=100014078166407"
         target="_blank"
         rel="noreferrer"
       >
@@ -29,7 +29,7 @@ const SocialMediaIcons = () => {
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.instagram.com"
+        href="https://www.instagram.com/nelly_makedonska/"
         target="_blank"
         rel="noreferrer"
       >
