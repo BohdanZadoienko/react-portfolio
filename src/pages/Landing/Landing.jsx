@@ -52,10 +52,10 @@ const Landing = ({ setSelectedPage }) => {
             Neonila {""}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20
-                        xs:before:content-brushDouble before:absolute before:-left-[15px]
-                        before:-top-[40px] before:z-[-1]"
+                        xs:before:content-brush before:absolute before:-left-[40px]
+                        before:-top-[70px] before:z-[-1]"
             >
-              Makedonska
+              Nelly
             </span>
           </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
